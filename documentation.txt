@@ -1,0 +1,8 @@
+5/1/24 20:00 - 20:28. Change the font type , size and colours
+         start to modificate the main card container
+
+7-/1/24 17:30 - 18:30. styling the main card 
+
+9/1/24 13:30 - 14:30 - finish with the main card , aplying styles to the cloud icon and the input. create a descriptions component file and descriptions css file
+
+8/1/24 19:30 - 20:10 - create cards with an icon and put them in to grid and style them 
