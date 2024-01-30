@@ -31,6 +31,7 @@ function App() {
       } else {
         setIcon(<WiSnow size={90} />);
       }
+      setTemperature(data.temp);
       setWeather(data);
 
       //dynamic bg
@@ -62,10 +63,10 @@ function App() {
                 name="city"
                 placeholder="Enter a city name"
               ></input>
-              <button className="bg-white rounded-md py-1 px-3 text-xl font-semibold hover:cursor-pointer hover:bg-opacity-75">
+              <span className="bg-white rounded-md py-1 px-3 text-xl font-semibold hover:cursor-pointer hover:bg-opacity-75">
                 {" "}
                 C°
-              </button>
+              </span>
             </div>
             <div className="section_temperature w-full h-1/5 p-4 flex flex-col justify-between rounded-lg bg-black bg-opacity-80 text-white ">
               <div className="icon flex items-center justify-between  text-2xl font-semibold capitalize ">
@@ -79,8 +80,7 @@ function App() {
                 </div>
                 <div className="temperature text-4xl font-semibold  ">
                   <h1>
-                    {temperature}
-                    {`${weather.temp.toFixed()}°C`}
+                    {temperature !== null && `${temperature.toFixed()}°C`}
                   </h1>
                 </div>
               </div>
